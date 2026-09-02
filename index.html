@@ -1,672 +1,546 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-  <head profile="https://twhiscock.github.io/">
-    <title>Kang/Berg Lab </title>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5PKBX922J7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-5PKBX922J7');
-</script>
-
-  <link rel="icon" type="image/png" href="./img/logo2.png">
-
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="The Kang/Berg Lab at the University of Aberdeen studies human brain development using fetal tissue, organoids, cerebroids and assembloids.">
+  <meta name="author" content="Kang/Berg Lab">
+  <title>Kang/Berg Lab | Human Brain Development</title>
 
-  <style>
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5PKBX922J7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-5PKBX922J7');
+  </script>
 
-
-  <title>Kang/Berg Lab</title>
-
-  <!-- Bootstrap core CSS -->
+  <link rel="icon" type="image/png" href="./img/logo2.png">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
   <link href="css/scrolling-nav.css" rel="stylesheet">
+  <style>
+    /* Small page-specific additions */
+    .person-card {
+      align-items: flex-start;
+    }
 
+    .person-card > div {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .person-bio {
+      border-top: 1px solid #dce6e9;
+      margin-top: 0.75rem;
+      padding-top: 0.6rem;
+    }
+
+    .person-bio summary {
+      color: #105b83;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .person-bio p {
+      color: #465965;
+      font-size: 0.9rem;
+      line-height: 1.55;
+      margin: 0.75rem 0 0;
+    }
+
+    .contact-links span {
+      color: #11283d;
+      font-weight: 700;
+    }
+
+    .video-thumbnail {
+      aspect-ratio: 16 / 9;
+      background: #091925;
+      display: block;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .video-thumbnail img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .video-play {
+      align-items: center;
+      background: #ff0033;
+      border-radius: 14px;
+      color: #fff;
+      display: flex;
+      font-size: 1.4rem;
+      height: 54px;
+      justify-content: center;
+      left: 50%;
+      padding-left: 4px;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 76px;
+    }
+
+    @media (min-width: 992px) {
+      .hero-image-larger {
+        margin-left: -5%;
+        max-width: 110%;
+        width: 110%;
+      }
+    }
+
+    .photo-grid .photo-wide {
+      aspect-ratio: auto;
+      background: #000;
+      grid-column: 1 / -1;
+      object-fit: contain;
+    }
+  </style>
 </head>
 
 <body id="page-top">
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">Kang/Berg Lab</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#research">Research</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#members">Members</a>
-          </li>
-   </li>
-       
-          
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#pubs">Publications</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Join us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#metal">Pictures</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#Outreach">Outreach</a>
-
-          </li>
-          </li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research">Research</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#members">People</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#pubs">Publications</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#outreach">Outreach</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#join">Join us</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#lab-life">Lab Life</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
- <section id="home">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-       <h2>How Does the Brain Develop?</h2>
-
-<p class="lead">
-  Our lab studies how the human brain forms and changes during early development. We focus on neural stem cells and how their behaviour is shaped by genetic programs and by the environment, including maternal inflammation, stress and other physiological signals.
-</p>
-
-<p class="lead">
-  We use human stem cell–based models such as region-specific organoids, hippocampal organoids, and 3D co-cultures that capture key steps in cortical and hippocampal development. These models allow us to follow how neural stem cells build tissue structure, form circuits and interact with the surrounding matrix and immune cells.
-</p>
-
-<p class="lead">
-  A major aim of our work is to understand how changes in these early processes can lead to conditions such as autism, epilepsy and intellectual disability. By defining the mechanisms that guide normal development, we hope to identify how and when things go wrong.
-</p>
-
-  The Kang–Berg Lab is based at the Institute of Medical Sciences at the University of Aberdeen.
-</p>
-
-        <img src="./img/logo.svg" id="photo" width="1000" alt="Lab Logo">
-      </div>
-
-      <div class="col-lg-4">
-        <a class="twitter-timeline" data-width="100%" data-height="500" href="https://twitter.com/kangberglab?ref_src=twsrc%5Etfw">
-          Tweets by @kangberglab
-        </a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <header id="home" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 hero-copy">
+          <p class="eyebrow">University of Aberdeen</p>
+          <h1>Kang/Berg Lab</h1>
+          <p class="hero-subtitle">Understanding human brain development using advanced 3D models</p>
+          <p class="hero-text">
+            We study how neural stem cells build the developing human brain and how environmental signals alter this process. Our work combines human fetal tissue with organoids, cerebroids and assembloids to investigate cortical and hippocampal development.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary js-scroll-trigger" href="#research">Explore our research</a>
+            <a class="btn btn-outline-light js-scroll-trigger" href="#featured">Latest publication</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img class="hero-image hero-image-larger" src="./img/zebrabow2.png" alt="Fluorescence microscopy image from Kang/Berg Lab research">
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </header>
 
+  <section id="featured" class="featured-section">
+    <div class="container">
+      <div class="featured-card">
+        <div class="row align-items-center">
+          <div class="col-md-5">
+            <img src="./img/Aberdeen_Cerebroid_Press_Release.jpg"
+              alt="Researchers featured in the University of Aberdeen cerebroid press release">
+          </div>
+          <div class="col-md-7 featured-copy">
+            <p class="eyebrow">Latest research</p>
+            <h2>New in <em>Nature Neuroscience</em></h2>
+            <p class="featured-title">
+              Modeling maternal immune activation in 3D ex vivo human fetal brain cerebroids reveals IL-17A-driven disruption of cortical development
+            </p>
+            <p>
+              Our human cerebroid model reveals how the inflammatory signal IL-17A acts on neural stem cells and alters early cortical development.
+            </p>
+            <a class="btn btn-primary" href="https://www.nature.com/articles/s41593-026-02400-2" target="_blank" rel="noopener noreferrer">Read the paper</a>
+            <a class="text-link" href="https://www.abdn.ac.uk/news/26007/" target="_blank" rel="noopener noreferrer">Read the press release</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="research">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
+  <section id="research" class="section">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">What we study</p>
         <h2>Research</h2>
         <p>
-          Research in our group focuses on how the human brain develops, both under normal conditions and in the context of disease. We use human stem cell–based models to study early brain development in vitro, including 3D brain organoids, hippocampal organoids, region-specific cultures, and assembloids that incorporate microglia, vasculature, and other key cell types. We also develop in vitro systems to study the developing choroid plexus and its influence on the embryonic brain environment.
-        </p>
-        <p>
-          Our work combines these models with approaches such as pharmacological and cytokine treatments, glucocorticoid exposure, high-resolution imaging, histology, and multi-omic analysis, including single-cell and spatial RNA sequencing. We are particularly interested in how neural stem cells are regulated during cortical and hippocampal development, how the extracellular matrix shapes tissue organisation, and how environmental influences such as maternal inflammation and stress can alter developmental trajectories.
-        </p>
-        <p>
-          We approach these questions in close collaboration with a diverse team of researchers and students. To learn more about our current projects, please browse our publications or get in touch.
+          We investigate how the human brain develops in health and disease. Our work centres on neural stem cells, tissue organisation and the environmental signals that shape early developmental trajectories.
         </p>
       </div>
-    </div>
-  </div>
-</section>
 
-
-
-  <section id="members">
-<p> 
-  </p>
-<div>
-<center><img src="./img/Image.jpeg" id="photo" width="400"> </center>
-</div>
-    <div class="container">
-      <div class="row">
-
-        <div class="col-lg-8 mx-auto">
-        <h2>Lab Members</h2>
-
-<h3>Principal Investigators</h3>
-<ul style="list-style: none; padding: 0;">
-  <li style="margin-bottom: 20px;">
-    <img src="./img/Picture_Eunchai.png" alt="Photo of Eunchai Kang" width="150">
-    <p><strong>Eunchai Kang</strong><br>Group Leader</p>
-  </li>
-  <li style="margin-bottom: 20px;">
-    <img src="./img/tom.png" alt="Photo of Daniel A. Berg" width="150">
-    <p><strong>Daniel A. Berg</strong><br>Group Leader</p>
-  </li>
-</ul>
-
- <h2>Lab Technicians</h2>
-<ul style="list-style: none; padding: 0;">
-  <li style="margin-bottom: 20px;">
-    <img src="./img/Rickard.jpeg" alt="Photo of Richard Gyuris" width="150">
-    <p><strong>Richard Gyuris</strong><br>Joined 2024</p>
-  </li>
-</ul>
-
-<h2>Postdocs</h2>
-<ul style="list-style: none; padding: 0;">
-  <li style="margin-bottom: 20px;">
-    <img src="./img/Muzatko.jpeg" alt="Photo of Olivia Soper" width="150">
-    <p><strong>Olivia Soper</strong><br>Joined 2025</p>
-  </li>
-	<li style="margin-bottom: 20px;">
-    <img src="./img/muhammad.jpg" alt="Photo of Muhammad Khan" width="150">
-    <p><strong>Muhammad Khan, MD</strong><br>Joined 2025</p>
-  </li>
-  <li style="margin-bottom: 20px;">
-    <img src="./img/David.jpg" alt="Photo of David Wragg" width="150">
-    <p><strong>David Wragg, PhD</strong><br>Joined 2024</p>
-  </li>
-  <li style="margin-bottom: 20px;">
-    <img src="./img/Delia.jpg" alt="Photo of Delia Ramirez" width="150">
-    <p><strong>Delia Ramirez, PhD</strong><br>Joined 2022</p>
-  </li>
-</ul>
-
-<h2>PhD Students</h2>
-<ul style="list-style: none; padding: 0;">
-  <li style="margin-bottom: 20px;">
-    <img src="./img/Sara.jpg" alt="Photo of Sara Valkila" width="150">
-    <p><strong>Sara Valkila</strong><br>Joined 2024</p>
-  </li>
-  <li style="margin-bottom: 20px;">
-    <img src="./img/Gaby.jpg" alt="Photo of Gaby Crawford" width="150">
-    <p><strong>Gaby Crawford</strong><br>Joined 2023</p>
-  </li>
-
-  <li style="margin-bottom: 20px;">
-    <img src="./img/Mario.jpg" alt="Photo of Mario Yanakiev" width="150">
-    <p><strong>Mario Yanakiev</strong><br>Joined 2021</p>
-  </li>
-</ul>
-
-
-
-
-          </ul>
-<h2>Former lab members</h2>
-
-<p class="lead">PhD students</p>
-<ul style="list-style: none;">
-  <li><p><strong>Olivia Soper</strong> – Completed PhD in 2025. Now a Postdoctoral Researcher at the University of Aberdeen.</p></li>
-  <li><p><strong>Do Hyeon Gim</strong> – Completed PhD in 2025. Now a Postdoctoral Researcher at Oxford University.</p></li>
-	 <li><p><strong>Muhammad Z.K. Assir</strong> – Completed PhD in 2025. Now a Postdoctoral Researcher at the University of Aberdeen.</p></li>
-</ul>
-
-<p class="lead">Undergrad/masters project students</p>
-<ul style="list-style: none;">
-  
-  <li><p>Beth Cavanagh, Naomi Sidabutar, Madhura Sham Nalawade</p></li>
-  <li><p>Malgorzata Michalik, Charlotte Colombo, Alicja Grzelak</p></li>
-  <li><p>Juri Westendorf, Anthony Gyening-Yeboah</p></li>
-	<li><p>Mohammad Kahn, Florence Roberts, Georgia Hepburn</p></li>
-  <li><p><em>(List not exhaustive)</em></p></li>
-</ul>
-
-</ul>
-          </ul>
+      <div class="row research-grid">
+        <div class="col-md-4">
+          <article class="research-card">
+            <span class="card-number">01</span>
+            <h3>Neural stem cells</h3>
+            <p>We study how neural stem cells are regulated during cortical and hippocampal development and how they generate organised neural tissue.</p>
+          </article>
         </div>
+        <div class="col-md-4">
+          <article class="research-card">
+            <span class="card-number">02</span>
+            <h3>Human 3D models</h3>
+            <p>We develop organoids, cerebroids and assembloids incorporating microglia, vasculature and other cell types, as well as models of the developing choroid plexus.</p>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="research-card">
+            <span class="card-number">03</span>
+            <h3>Developmental disruption</h3>
+            <p>We examine how maternal inflammation, stress and other physiological signals alter brain development and may shape trajectories relevant to neurodevelopmental conditions.</p>
+          </article>
+        </div>
+      </div>
+
+      <p class="methods-note">
+        We combine human experimental models with pharmacological and cytokine treatments, high-resolution imaging, histology, single-cell transcriptomics and spatial RNA sequencing.
+      </p>
+    </div>
+  </section>
+
+  <section id="members" class="section bg-soft">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Our team</p>
+        <h2>People</h2>
+      </div>
+
+      <img class="team-photo" src="./img/Image.jpeg" alt="Members of the Kang/Berg Lab">
+
+      <h3 class="people-heading">Principal investigators</h3>
+      <div class="people-grid people-grid-pi">
+        <article class="person-card">
+          <img src="./img/Picture_Eunchai.png" alt="Eunchai Kang">
+          <div>
+            <h4>Eunchai Kang</h4>
+            <p>Group Leader</p>
+            <details class="person-bio">
+              <summary>Read biography</summary>
+              <p>Eunchai is a developmental neuroscientist and co-leads the Kang/Berg Lab. Her research uses human stem cell-derived models to investigate cortical development, neurogenesis and how environmental influences alter the developing brain.</p>
+            </details>
+          </div>
+        </article>
+        <article class="person-card">
+          <img src="./img/tom.png" alt="Daniel A. Berg">
+          <div>
+            <h4>Daniel A. Berg</h4>
+            <p>Group Leader</p>
+            <details class="person-bio">
+              <summary>Read biography</summary>
+              <p>Daniel is a developmental neuroscientist and co-leads the Kang/Berg Lab. His research focuses on neural stem cells, hippocampal development and adult neurogenesis, combining human tissue with advanced 3D experimental models.</p>
+            </details>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="people-heading">Current team</h3>
+      <div class="people-grid">
+        <article class="person-card">
+          <img src="./img/Rickard.jpeg" alt="Richard Gyuris">
+          <div>
+            <h4>Richard Gyuris</h4>
+            <p>Research Technician · Joined 2024</p>
+            <details class="person-bio">
+              <summary>Read biography</summary>
+              <p>Richard is a Research Technician at the Institute of Medical Sciences, University of Aberdeen. He completed a bachelor's degree in Cell and Molecular Biology at the University of Szeged, Hungary, and a master's degree in Molecular Medicine at the University of Aberdeen. His experience includes RNA, DNA and protein work, histology, microscopy, tissue culture and work with laboratory animals.</p>
+              <p>Richard aims to continue broadening his knowledge and technical skills. Outside work, he enjoys hiking, gardening, aquascaping and keeping exotic pets.</p>
+            </details>
+          </div>
+        </article>
+        <article class="person-card">
+          <img src="./img/Muzatko.jpeg" alt="Olivia Soper">
+          <div>
+            <h4>Olivia Soper, PhD</h4>
+            <p>Postdoctoral Researcher · Joined 2021</p>
+            <details class="person-bio">
+              <summary>Read biography</summary>
+              <p>Olivia joined the Kang/Berg Lab in 2021 for her PhD, where she developed and characterised human iPSC-derived hippocampal organoids for studying neurogenesis. Before moving to Aberdeen, she completed a BSc in Pharmacology and Physiology and an MSc in Neuroscience at the University of Manchester.</p>
+              <p>After completing her PhD in 2025, Olivia continued in the lab as a postdoctoral researcher. She now investigates how pharmacological compounds influence neural stem cell behaviour and neurogenesis in hippocampal organoids.</p>
+              <p>Outside the lab, she maintains another thriving culture: her sourdough starter. She is also a regular at the gym and recently taught herself to crochet.</p>
+            </details>
+          </div>
+        </article>
+        <article class="person-card">
+          <img src="./img/muhammad.jpg" alt="Muhammad Z. K. Assir">
+          <div>
+            <h4>Muhammad Z. K. Assir, MD, PhD</h4>
+            <p>Research Fellow · Stem Cell Biologist</p>
+            <details class="person-bio">
+              <summary>Read biography</summary>
+              <p>Assir is a stem cell biologist driven by a simple but ambitious goal: to build better, and perhaps bigger, brains in the lab. His research focuses on developing and refining human stem cell-based models to understand brain development and disease, with a particular interest in creating new systems and pushing experimental boundaries.</p>
+              <p>Originally trained in medicine, Assir graduated from Allama Iqbal Medical College in Pakistan, completed a residency in Internal Medicine and later served as an Assistant Professor of Medicine. His journey from clinic to lab led him to the Kang/Berg Lab, where he completed his PhD and continues to explore the interface between biology and engineering.</p>
+              <p>At heart, Assir is endlessly inquisitive and eager to try new ideas, particularly when they involve building something that has not been built before. Outside the lab, he is a poet at heart and a proud dad to four energetic boys.</p>
+            </details>
+          </div>
+        </article>
+        <article class="person-card">
+          <img src="./img/David.jpg" alt="David Wragg">
+          <div>
+            <h4>David Wragg, PhD</h4>
+            <p>Computational Biologist · Joined 2024</p>
+            <details class="person-bio">
+              <summary>Read biography</summary>
+              <p>David is a computational biologist who joined both the Morgan and Kang/Berg labs in October 2024. He has extensive experience in genomics across a range of species, having worked at the University of Nottingham, INRAE Toulouse and the Roslin Institute. He applies single-cell omics to brain organoids to study neurological disorders.</p>
+              <p>Much of David's spare time is spent entertaining his two rescue dogs and his children. He enjoys international rugby, K-dramas, B-movies, tabletop gaming, painting and playing guitar. He is also a co-founder of BeeBytes Analytics CIC, a honey bee genetics community interest company.</p>
+            </details>
+          </div>
+        </article>
+        <article class="person-card">
+          <img src="./img/Sara.jpg" alt="Sara Valkila">
+          <div>
+            <h4>Sara Valkila</h4>
+            <p>PhD Student · Joined 2024</p>
+            <details class="person-bio">
+              <summary>Read biography</summary>
+              <p>Sara first joined the Kang/Berg Lab in 2022 as an undergraduate student assistant while completing her BSc in Biomedical Sciences (Anatomy) at the University of Aberdeen. Rooted in her anatomical training, she developed a strong interest in the structural organisation of the brain and how it is shaped during development. As an Amgen Scholar in 2023, Sara completed a summer placement at Ludwig Maximilian University of Munich, where she investigated the link between mutations in a tubulin gene and neurodevelopmental disease.</p>
+              <p>Sara returned to the lab for her PhD in 2024. She now investigates cortical interneuron development and models maternal inflammation using 3D human brain cultures. Her work connects detailed anatomical understanding with dynamic models of early neurodevelopment.</p>
+              <p>Outside the lab, Sara enjoys exploring Munros and coastal paths, walking in botanical gardens, attending weekly Pilates sessions and watching period dramas. She also cares for a growing collection of houseplants.</p>
+            </details>
+          </div>
+        </article>
+        <article class="person-card">
+          <img src="./img/Gaby.jpg" alt="Gaby Crawford">
+          <div>
+            <h4>Gabriella Crawford</h4>
+            <p>PhD Student · Joined 2023</p>
+            <details class="person-bio">
+              <summary>Read biography</summary>
+              <p>Gaby joined the Kang/Berg Lab in 2023 for her PhD, using iPSC-derived brain organoids to investigate neuroimmune interactions in neurodevelopmental and neurodegenerative conditions. She aims to develop brain organoid cultures incorporating microglia and vasculature to better represent the human brain.</p>
+              <p>Before moving to Aberdeen, Gaby rowed competitively for 12 years and represented the University of Alabama while completing her BSc in Biology. She later completed an MSc in Stem Cell Technology and Regenerative Medicine at the University of Nottingham, where she discovered her interest in stem cells and organoid culture. In 2022, she worked in industry as a Research Scientist at Histologix before returning to academia.</p>
+              <p>Outside the lab, Gaby enjoys walking along Aberdeen beach, lifting at the gym and cooking, particularly trying to recreate her mum's authentic Mexican food.</p>
+            </details>
+          </div>
+        </article>
+      </div>
+
+      <div class="alumni-block">
+        <h3>Former lab members</h3>
+        <p><strong>Mario Yanakiev</strong> · Former PhD Student</p>
+        <p><strong>Delia Ramirez, PhD</strong> · Former Postdoctoral Researcher</p>
+        <p><strong>Olivia Soper</strong> · PhD completed 2025 · Now a Postdoctoral Researcher at the University of Aberdeen</p>
+        <p><strong>Do Hyeon Gim</strong> · PhD completed 2025 · Now a Postdoctoral Researcher at the University of Oxford</p>
+        <p><strong>Muhammad Z. K. Assir</strong> · PhD completed 2025 · Now a Postdoctoral Researcher at the University of Aberdeen</p>
+        <p class="former-students"><strong>Former undergraduate and master's students:</strong> Beth Cavanagh, Naomi Sidabutar, Madhura Sham Nalawade, Malgorzata Michalik, Charlotte Colombo, Alicja Grzelak, Juri Westendorf, Anthony Gyening-Yeboah, Mohammad Kahn, Florence Roberts and Georgia Hepburn. <em>List not exhaustive.</em></p>
       </div>
     </div>
   </section>
 
+  <section id="pubs" class="section">
+    <div class="container publication-container">
+      <div class="section-heading">
+        <p class="eyebrow">Selected work</p>
+        <h2>Publications</h2>
+      </div>
 
+      <h3 class="publication-heading">Recent publications</h3>
+      <ol class="publication-list featured-publications">
+        <li>
+          <p class="publication-authors">Muhammad Z. K. Assir, Mario Yanakiev, Do Hyeon Gim, Sara S. M. Valkila, Paola Muscolino, Peng Liu, Laetitia L. Lecante, Paul A. Fowler, Daniel A. Berg, Eunchai Kang</p>
+          <p class="publication-title">Modeling maternal immune activation in 3D ex vivo human fetal brain cerebroids reveals IL-17A-driven disruption of cortical development</p>
+          <p class="publication-meta"><cite>Nature Neuroscience</cite>, 2026 · <a href="https://www.nature.com/articles/s41593-026-02400-2" target="_blank" rel="noopener noreferrer">View publication</a></p>
+        </li>
+        <li>
+          <p class="publication-authors">David Wragg, Eunchai Kang, Michael D. Morgan</p>
+          <p class="publication-title">Harvesting more reads from single-cell combinatorial barcoding data with <em>scarecrow</em></p>
+          <p class="publication-meta"><cite>Bioinformatics</cite>, 42(4), btag182, 2026 · <a href="https://academic.oup.com/bioinformatics/article/42/4/btag182/8651107" target="_blank" rel="noopener noreferrer">View publication</a></p>
+        </li>
+        <li>
+          <p class="publication-authors">Do Hyeon Gim, Muhammad Z. K. Assir, Olivia Soper, Paul A. Fowler, Michael D. Morgan, Daniel A. Berg, Eunchai Kang</p>
+          <p class="publication-title">Deciphering Cell-Type and Temporal-Specific Matrisome Expression Signatures in Human Cortical Development and Neurodevelopmental Disorders via scRNA-Seq Meta-Analysis</p>
+          <p class="publication-meta"><cite>Nature Communications</cite>, 2025 · <a href="https://www.nature.com/articles/s41467-025-64381-3" target="_blank" rel="noopener noreferrer">View publication</a></p>
+        </li>
+        <li>
+          <p class="publication-authors">Olivia Soper, Muhammad Z. K. Assir, Delia Ramírez, Gabriella Crawford, Richard Gyuris, Sara S. M. Valkila, Laetitia L. Lecante, Peng Liu, Paul A. Fowler, J. Antonio González, Daniel A. Berg, Eunchai Kang</p>
+          <p class="publication-title">A human hippocampal organoid model with sustained neural stem cells reveals state shifts under glucocorticoid stress</p>
+          <p class="publication-meta"><cite>bioRxiv</cite>, 2025 · <a href="https://doi.org/10.1101/2025.11.03.686207" target="_blank" rel="noopener noreferrer">View preprint</a></p>
+        </li>
+      </ol>
 
+      <h3 class="publication-heading">Earlier highlights</h3>
+      <ol class="publication-list compact-publications">
+        <li>
+          <p class="publication-authors">F. Ye, E. Kang, C. Yu, X. Qian, F. Jacob, C. Yu, M. Mao, R. Y. C. Poon, J. Kim, et al.</p>
+          <p class="publication-title">DISC1 regulates neurogenesis via modulating kinetochore attachment of Ndel1/Nde1 during mitosis</p>
+          <p class="publication-meta"><cite>Neuron</cite>, 2017 · <a href="https://www.sciencedirect.com/science/article/pii/S0896627317309789" target="_blank" rel="noopener noreferrer">View publication</a></p>
+        </li>
+        <li>
+          <p class="publication-authors">X. Qian, H. N. Nguyen, M. M. Song, C. Hadiono, S. C. Ogden, C. Hammack, et al.</p>
+          <p class="publication-title">Brain-region-specific organoids using mini-bioreactors for modeling ZIKV exposure</p>
+          <p class="publication-meta"><cite>Cell</cite>, 2016 · <a href="https://www.sciencedirect.com/science/article/pii/S0092867416304676" target="_blank" rel="noopener noreferrer">View publication</a></p>
+        </li>
+        <li>
+          <p class="publication-authors">D. A. Berg, Y. Su, D. Jimenez-Cyrus, A. Patel, N. Huang, D. Morizet, et al.</p>
+          <p class="publication-title">A Common Embryonic Origin of Stem Cells Drives Developmental and Adult Neurogenesis</p>
+          <p class="publication-meta"><cite>Cell</cite>, 2019 · <a href="https://www.sciencedirect.com/science/article/pii/S009286741930159X" target="_blank" rel="noopener noreferrer">View publication</a></p>
+        </li>
+        <li>
+          <p class="publication-authors">J. Shin, D. A. Berg, Y. Zhu, J. Y. Shin, J. Song, M. A. Bonaguidi, G. Enikolopov, et al.</p>
+          <p class="publication-title">Single-cell RNA-seq with Waterfall reveals molecular cascades underlying adult neurogenesis</p>
+          <p class="publication-meta"><cite>Cell Stem Cell</cite>, 2015 · <a href="https://www.sciencedirect.com/science/article/pii/S1934590915003124" target="_blank" rel="noopener noreferrer">View publication</a></p>
+        </li>
+        <li>
+          <p class="publication-authors">E. Kang, J. Song, Y. Lin, J. Park, J. H. Lee, Q. Hussani, Y. Gu, S. Ge, et al.</p>
+          <p class="publication-title">Interplay between a mental disorder risk gene and developmental polarity switch of GABA action leads to excitation-inhibition imbalance</p>
+          <p class="publication-meta"><cite>Cell Reports</cite>, 2019 · <a href="https://www.sciencedirect.com/science/article/pii/S2211124719309210" target="_blank" rel="noopener noreferrer">View publication</a></p>
+        </li>
+        <li>
+          <p class="publication-authors">E. Kang, D. Jiang, K. Y. Ryu, S. Lim, M. Kwak, C. D. Grey, M. Xu, J. H. Choi, et al.</p>
+          <p class="publication-title">Early postnatal exposure to isoflurane causes cognitive deficits and disrupts development of newborn hippocampal neurons via activation of the mTOR pathway</p>
+          <p class="publication-meta"><cite>PLoS Biology</cite>, 2017 · <a href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2001246" target="_blank" rel="noopener noreferrer">View publication</a></p>
+        </li>
+      </ol>
+    </div>
+  </section>
 
+  <section id="outreach" class="section bg-soft">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Beyond the lab</p>
+        <h2>Outreach &amp; Communications</h2>
+      </div>
 
-  <section id="pubs" class="bg-light">
+      <div class="outreach-grid">
+        <article class="outreach-card outreach-video">
+          <a class="video-thumbnail" href="https://www.youtube.com/watch?v=xmiDiDY6yoY&amp;t=24s" target="_blank" rel="noopener noreferrer" aria-label="Watch How Scientists Grow Human Brain Cells to Uncover Neuroscience's Biggest Secrets on YouTube">
+            <img src="https://img.youtube.com/vi/xmiDiDY6yoY/hqdefault.jpg" alt="Thumbnail for the video How Scientists Grow Human Brain Cells to Uncover Neuroscience's Biggest Secrets" loading="lazy">
+            <span class="video-play" aria-hidden="true">▶</span>
+          </a>
+          <div class="outreach-copy">
+            <p class="outreach-type">Video</p>
+            <h3><a href="https://www.youtube.com/watch?v=xmiDiDY6yoY&amp;t=24s" target="_blank" rel="noopener noreferrer">How Scientists Grow Human Brain Cells to Uncover Neuroscience's Biggest Secrets</a></h3>
+          </div>
+        </article>
+
+        <article class="outreach-card">
+          <img src="./img/Aberdeen_Cerebroid_Press_Release.jpg" alt="University of Aberdeen press release about human brain cerebroids">
+          <div class="outreach-copy">
+            <p class="outreach-type">Press release</p>
+            <h3><a href="https://www.abdn.ac.uk/news/26007/" target="_blank" rel="noopener noreferrer">New human brain model sheds light on how inflammation may influence early brain development</a></h3>
+          </div>
+        </article>
+
+        <article class="outreach-card">
+          <img src="./img/HumaneEK.jpg" alt="Les Rhoades PhD Studentship award announcement">
+          <div class="outreach-copy">
+            <p class="outreach-type">Award</p>
+            <h3><a href="https://humaneresearch.org.uk/announcing-the-winner-of-the-les-rhoades-phd-studentship-award/" target="_blank" rel="noopener noreferrer">Eunchai Kang receives the Les Rhoades PhD Studentship Award</a></h3>
+          </div>
+        </article>
+
+        <article class="outreach-card">
+          <img src="./img/BBC.jpg" alt="BBC Bitesize article about adult neurogenesis">
+          <div class="outreach-copy">
+            <p class="outreach-type">Article</p>
+            <h3><a href="https://www.bbc.co.uk/bitesize/articles/z2t3ydm" target="_blank" rel="noopener noreferrer">The discovery of adult neurogenesis for BBC Bitesize</a></h3>
+          </div>
+        </article>
+
+        <article class="outreach-card outreach-video">
+          <a class="video-thumbnail" href="https://www.youtube.com/watch?v=ShIjh6pAIgk" target="_blank" rel="noopener noreferrer" aria-label="Watch Adult Neurogenesis Talk for TechFest Aberdeen on YouTube">
+            <img src="https://img.youtube.com/vi/ShIjh6pAIgk/hqdefault.jpg" alt="Thumbnail for the Adult Neurogenesis Talk for TechFest Aberdeen" loading="lazy">
+            <span class="video-play" aria-hidden="true">▶</span>
+          </a>
+          <div class="outreach-copy">
+            <p class="outreach-type">Video</p>
+            <h3><a href="https://www.youtube.com/watch?v=ShIjh6pAIgk" target="_blank" rel="noopener noreferrer">Adult Neurogenesis Talk for TechFest Aberdeen</a></h3>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="join" class="section join-section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
-        <section>
-  <h2>Selected Publications</h2> 
- 
-<h3>New Publications</h3> 
-<ul> 
-
-  <li> 
-    <strong>Muhammad Z. K. Assir, Mario Yanakiev, Do Hyeon Gim, Sara S. M. Valkila, Paola Muscolino, Peng Liu, Laetitia L. Lecante, Paul A. Fowler, Daniel A. Berg, Eunchai Kang</strong><br> 
-    <em>Modeling maternal immune activation in 3D ex vivo human fetal brain cerebroids reveals IL-17A-driven disruption of cortical development</em><br> 
-    <cite>Nature Neuroscience</cite>, 2026.  
-    <a href="https://www.nature.com/articles/s41593-026-02400-2" target="_blank" rel="noopener noreferrer">View Publication</a>
-  </li>
-
-  <li> 
-    <strong>Do Hyeon Gim, Muhammad Z. K. Assir, Olivia Soper, Paul A. Fowler, Michael D. Morgan, Daniel A. Berg, Eunchai Kang</strong><br> 
-    <em>Deciphering Cell-Type and Temporal-Specific Matrisome Expression Signatures in Human Cortical Development and Neurodevelopmental Disorders via scRNA-Seq Meta-Analysis</em><br> 
-    <cite>Nature Communications</cite>, 2025.   
-    <a href="https://www.nature.com/articles/s41467-025-64381-3" target="_blank" rel="noopener noreferrer">View Publication</a>
-  </li>
-
-  <li>
-    <strong>Olivia Soper, Muhammad Z. K. Assir, Delia Ramírez, Gabriella Crawford, Richard Gyuris, Sara S. M. Valkila, Laetitia L. Lecante, Peng Liu, Paul A. Fowler, J. Antonio González, Daniel A. Berg, Eunchai Kang</strong><br>
-    <em>A human hippocampal organoid model with sustained neural stem cells reveals state shifts under glucocorticoid stress</em><br>
-    <cite>bioRxiv</cite>, 2025.<br>
-    <a href="https://doi.org/10.1101/2025.11.03.686207" target="_blank" rel="noopener noreferrer">View Preprint</a>
-  </li>
-
-</ul>
-
-    
-<h3>Organoids</h3>
-<ul>
-  <li>
-    <strong>F. Ye, E. Kang, C. Yu, X. Qian, F. Jacob, C. Yu, M. Mao, R.Y.C. Poon, J. Kim, et al.</strong><br>
-    <em>"DISC1 regulates neurogenesis via modulating kinetochore attachment of Ndel1/Nde1 during mitosis"</em><br>
-    <cite>Neuron</cite>, 2017.  
-    <a href="https://www.sciencedirect.com/science/article/pii/S0896627317309789" target="_blank" rel="noopener noreferrer">View Publication</a>
-  </li>
-  <li>
-    <strong>X. Qian, H.N. Nguyen, M.M. Song, C. Hadiono, S.C. Ogden, C. Hammack, et al.</strong><br>
-    <em>"Brain-region-specific organoids using mini-bioreactors for modeling ZIKV exposure"</em><br>
-    <cite>Cell</cite>, 2016.  
-    <a href="https://www.sciencedirect.com/science/article/pii/S0092867416304676" target="_blank" rel="noopener noreferrer">View Publication</a>
-  </li>
-</ul>
-
-    
-    
-      <h3>Neurogenesis</h3>
-<ul>
-  <li>
-    <strong>D.A. Berg, Y. Su, D. Jimenez-Cyrus, A. Patel, N. Huang, D. Morizet, et al.</strong><br>
-    <em>"A Common Embryonic Origin of Stem Cells Drives Developmental and Adult Neurogenesis"</em><br>
-    <cite>Cell</cite>, 2019.  
-    <a href="https://www.sciencedirect.com/science/article/pii/S009286741930159X?via%3Dihub" target="_blank" rel="noopener noreferrer">View Publication</a>
-  </li>
-  <li>
-    <strong>D.A. Berg, A.M. Bond, G. Ming, H. Song</strong><br>
-    <em>"Radial glial cells in the adult dentate gyrus: what are they and where do they come from?"</em><br>
-    <cite>F1000Research</cite>, 2018.  
-    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5840617/" target="_blank" rel="noopener noreferrer">View Publication</a>
-  </li>
-  <li>
-    <strong>J. Shin, D.A. Berg, Y. Zhu, J.Y. Shin, J. Song, M.A. Bonaguidi, G. Enikolopov, et al.</strong><br>
-    <em>"Single-cell RNA-seq with Waterfall reveals molecular cascades underlying adult neurogenesis"</em><br>
-    <cite>Cell Stem Cell</cite>, 2015.  
-    <a href="https://www.sciencedirect.com/science/article/pii/S1934590915003124" target="_blank" rel="noopener noreferrer">View Publication</a>
-  </li>
-  <li>
-    <strong>D.A. Berg, K.J. Yoon, B. Will, A.Y. Xiao, N.S. Kim, K.M. Christian, H. Song, G. Ming</strong><br>
-    <em>"Tbr2-expressing intermediate progenitor cells in the adult mouse hippocampus are unipotent neuronal precursors with limited amplification capacity under homeostasis"</em><br>
-    <cite>Frontiers in Biology</cite>, 2015.  
-    <a href="https://link.springer.com/article/10.1007/s11515-015-1364-0" target="_blank" rel="noopener noreferrer">View Publication</a>
-  </li>
-  <li>
-    <strong>M.H. Jang, M.A. Bonaguidi, Y. Kitabatake, J. Sun, J. Song, E. Kang, et al.</strong><br>
-    <em>"Secreted frizzled-related protein 3 regulates activity-dependent adult hippocampal neurogenesis"</em><br>
-    <cite>Cell Stem Cell</cite>, 2013.  
-    <a href="https://www.sciencedirect.com/science/article/pii/S1934590912007035" target="_blank" rel="noopener noreferrer">View Publication</a>
-  </li>
-  <li>
-    <strong>D.A. Berg, M. Kirkham, H. Wang, J. Frisén, A. Simon</strong><br>
-    <em>"Dopamine controls neurogenesis in the adult salamander midbrain in homeostasis and during regeneration of dopamine neurons"</em><br>
-    <cite>Cell Stem Cell</cite>, 2011.  
-    <a href="https://www.sciencedirect.com/science/article/pii/S193459091100052X" target="_blank" rel="noopener noreferrer">View Publication</a>
-  </li>
-  <li>
-    <strong>D.A. Berg, M. Kirkham, A. Beljajeva, D. Knapp, B. Habermann, et al.</strong><br>
-    <em>"Efficient regeneration by activation of neurogenesis in homeostatically quiescent regions of the adult vertebrate brain"</em><br>
-    <cite>Development</cite>, 2010.  
-    <a href="https://www.sciencedirect.com/science/article/pii/S193459091100052X" target="_blank" rel="noopener noreferrer">View Publication</a>
-  </li>
-</ul>
-
-<h3>Psychiatric Disorders</h3>
-<ul>
-  <li>
-    <strong>E. Kang, J. Song, Y. Lin, J. Park, J.H. Lee, Q. Hussani, Y. Gu, S. Ge, et al.</strong><br>
-    <em>"Interplay between a mental disorder risk gene and developmental polarity switch of GABA action leads to excitation-inhibition imbalance"</em><br>
-    <cite>Cell Reports</cite>, 2019.  
-    <a href="https://www.sciencedirect.com/science/article/pii/S2211124719309210" target="_blank" rel="noopener noreferrer">View Publication</a>
-  </li>
-  <li>
-    <strong>E. Kang, Z. Wen, H. Song, K.M. Christian, G. Ming</strong><br>
-    <em>"Adult neurogenesis and psychiatric disorders"</em><br>
-    <cite>Cold Spring Harbor Perspectives in Biology</cite>, 2018.  
-    <a href="https://cshperspectives.cshlp.org/content/8/9/a019026.short" target="_blank" rel="noopener noreferrer">View Publication</a>
-  </li>
-  <li>
-    <strong>H. Zhang, E. Kang, Y. Wang, C. Yang, H. Yu, Q. Wang, Z. Chen, C. Zhang, et al.</strong><br>
-    <em>"Brain-specific Crmp2 deletion leads to neuronal development deficits and behavioural impairments in mice"</em><br>
-    <cite>Nature Communications</cite>, 2016.  
-    <a href="https://www.nature.com/articles/ncomms11773?origin=ppub" target="_blank" rel="noopener noreferrer">View Publication</a>
-  </li>
-  <li>
-    <strong>H. Lee, E. Kang, D. GoodSmith, D.Y. Yoon, H. Song, J.J. Knierim, et al.</strong><br>
-    <em>"DISC1-mediated dysregulation of adult hippocampal neurogenesis in rats"</em><br>
-    <cite>Frontiers in Systems Neuroscience</cite>, 2015.  
-    <a href="https://www.frontiersin.org/articles/10.3389/fnsys.2015.00093/full" target="_blank" rel="noopener noreferrer">View Publication</a>
-  </li>
-</ul>
-
-        <h3>Neurotoxicity</h3>
-<ul>
-  <li>
-    <strong>J. Neudecker, J. Xu, C. Thomas, L. Penberthy, E. Kang, D. A. Berg, D. O’Meara, A. Brambrink, C. Mintz</strong><br>
-    <em>"An Update on Preclinical Research in Anesthetic-Induced Developmental Neurotoxicity in Nonhuman Primate and Rodent Models"</em><br>
-    <cite>Journal of Neurosurgical Anesthesiology</cite>, 35, 104–113, 2023.  
-    <a href="https://journals.lww.com/jnsa/Citation/2023/01000/An_Update_on_Preclinical_Research_in.18.aspx" target="_blank" rel="noopener noreferrer">View Publication</a>
-  </li>
-  <li>
-    <strong>J. Xu, E. Kang, C.D. Mintz</strong><br>
-    <em>"Anesthetics disrupt brain development via actions on the mTOR pathway"</em><br>
-    <cite>Communicative & Integrative Biology</cite>, 11(2), 1–4, 2018.  
-    <a href="https://www.tandfonline.com/doi/full/10.1080/19420889.2018.1451719" target="_blank" rel="noopener noreferrer">View Publication</a>
-  </li>
-  <li>
-    <strong>E. Kang, D. Jiang, K.Y. Ryu, S. Lim, M. Kwak, C.D. Grey, M. Xu, J.H. Choi, S. Junn, J. Kim, J. Xu, M. Scaefer, R.A. Johns, H. Song, G.L. Ming, C.D. Mintz</strong><br>
-    <em>"Early postnatal exposure to isoflurane causes cognitive deficits and disrupts development of newborn hippocampal neurons via activation of the mTOR pathway"</em><br>
-    <cite>PLoS Biology</cite>, 15(7), 2017.  
-    <a href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2001246" target="_blank" rel="noopener noreferrer">View Publication</a>
-  </li>
-  <li>
-    <strong>E. Kang, D.A. Berg, O. Furmanski, W.M. Jackson, Y.K. Ryu, C.D. Gray, C.D. Mintz</strong><br>
-    <em>"Neurogenesis and developmental anesthetic neurotoxicity"</em><br>
-    <cite>Neurotoxicology and Teratology</cite>, 60, 33–39, 2017.  
-    <a href="https://www.sciencedirect.com/science/article/pii/S0892036216301088" target="_blank" rel="noopener noreferrer">View Publication</a>
-  </li>
-  <li>
-    <strong>E.M. Kwak, S. Lim, E. Kang, O. Furmanski, H. Song, Y.K. Ryu, C.D. Mintz</strong><br>
-    <em>"Effects of neonatal hypoxic-ischemic injury and hypothermic neuroprotection on neural progenitor cells in the mouse hippocampus"</em><br>
-    <cite>Developmental Neuroscience</cite>, 2015.  
-    <a href="https://www.karger.com/Article/Abstract/430862" target="_blank" rel="noopener noreferrer">View Publication</a>
-  </li>
-</ul>
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="bg-light pt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2>Join Us</h2>
-                   <p>
-  We are always looking for talented and motivated students to join our lab. 
-  If you are interested in understanding the wonders of human brain development, please email us.
-</p>
-
-<p>
-  Follow the lab on 
-  <a href="https://www.linkedin.com/company/kangberglab/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
-</p><p>We are happy to support applications for independent postdoctoral fellowships on a range of topics. If your research vision could benefit from our input, then please get in touch and we can discuss next steps.</p>
-                    <p>Some possible opportunities include:</p>
-                    <ul>
-                        <li><a href="https://www.embo.org/funding-awards/fellowships/postdoctoral-fellowships">EMBO Long Term Fellowships</a></li>
-                        <li><a href="https://royalsociety.org/grants-schemes-awards/grants/newton-international/">Newton International Fellowships</a></li>
-                        <li><a href="https://wellcome.ac.uk/grant-funding/schemes/sir-henry-wellcome-postdoctoral-fellowships">Sir Henry Wellcome Postdoctoral Fellowships</a></li>
-                        <li><a href="https://www.royalcommission1851.org/awards/">Royal Commission for the Exhibition of 1851</a></li>
-                        <li><a href="http://ec.europa.eu/research/mariecurieactions/">Marie Skłodowska-Curie Fellowships</a></li>
-                        <li><a href="http://www.hfsp.org/funding/postdoctoral-fellowships">Human Frontier Science Program</a></li>
-                        <li><a href="https://www.leverhulme.ac.uk/funding/grant-schemes/early-career-fellowships">Leverhulme Trust Early Career Fellowships</a></li>
-                    </ul>
-                    <h3>Undergraduate Students</h3>
-                    <p>If you are an undergraduate looking for an interesting summer research project, please get in touch! BSDB offers <a href="http://bsdb.org/awards/gurdon-studentships-for-summer-vacation-work/">summer studentships</a>.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-  <section id="metal">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Pictures</h2>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
-  .column {
-    width: 100%;
-  }
-}
-</style>
-</head>
-<body>
-
-
-
-<div class="row">
-  <div class="column">
-    <img src="./img/56462.jpg" alt="Snow" style="width:150%">
-  </div>
-  <div class="column">
-    <img src="./img/56460.jpg" alt="Forest" style="width:150%">
-  </div>
-  <div class="column">
-    <img src="./img/56463.jpg" alt="Mountains" style="width:150%">
-  </div>
-</div>
-
-<div class="row">
-  <div class="column">
-    <img src="./img/lab2.jpeg" alt="Snow" style="width:150%">
-  </div>
-  <div class="column">
-    <img src="./img/Lab picture20223.jpg"  style="width:150%">
-  </div>
-  <div class="column">
-    <img src="./img/anthony.jpg" alt="Mountains" style="width:150%">
-  </div>
-</div>
-
-<div class="row">
-  <div class="column">
-    <img src="./img/Lab fun 1 2022.jpg" alt="Snow" style="width:150%">
-  </div>
-  <div class="column">
-    <img src="./img/Lab fun 2 2022.jpg" alt="Forest" style="width:150%">
-  </div>
-  <div class="column">
-    <img src="./img/Lab fun 3 2022.jpg" alt="Mountains" style="width:150%">
-  </div>
-</div>
-<div class="row">
-  <div class="column">
-    <img src="./img/Lab picture2022.jpg" alt="Snow" style="width:150%">
-  </div>
-  <div class="column">
-    <img src="./img/56495.jpg" alt="Forest" style="width:150%">
-  </div>
-  <div class="column">
-    <img src="./img/Welcome1.jpg" alt="Mountains" style="width:150%">
-  </div>
-</div>
-
-
-
-
-
-
+        <div class="col-lg-7">
+          <p class="eyebrow">Work with us</p>
+          <h2>Join the Kang/Berg Lab</h2>
+          <p class="lead">We welcome enquiries from motivated students and researchers interested in human brain development.</p>
+          <p>
+            We are happy to support applications for independent postdoctoral fellowships. Please contact Daniel or Eunchai early to discuss potential projects and suitable funding schemes.
+          </p>
+          <p>
+            Undergraduate students interested in summer research projects are also encouraged to get in touch. The British Society for Developmental Biology offers <a href="https://bsdb.org/awards/gurdon-studentships-for-summer-vacation-work/" target="_blank" rel="noopener noreferrer">Gurdon Studentships</a> for summer vacation work.
           </p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="Outreach">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-<h2>Outreach & Communications</h2>
-
-<!-- Section for Video and Article Links -->
-<div class="outreach-container">
-
-    <!-- Video 1 -->
-    <div class="outreach-item">
-        <h5>
-            <a href="https://www.youtube.com/watch?v=xmiDiDY6yoY&t=24s">
-                How Scientists Grow Human Brain Cells to Uncover Neuroscience’s Biggest Secrets
-            </a>
-        </h5>
-        <div class="video-container">
-            <iframe width="560" height="315" 
-                    src="https://www.youtube.com/embed/xmiDiDY6yoY?si=TUVgVFaR_BCjkqWV" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-            </iframe>
-        </div>
-    </div>
-
-    <!-- Cerebroid Press Release -->
-    <div class="outreach-item">
-        <h5>
-            <a href="https://www.abdn.ac.uk/news/26007/" target="_blank" rel="noopener noreferrer">
-                New human brain model sheds light on how inflammation may influence early brain development
-            </a>
-        </h5>
-        <img src="./img/Aberdeen_Cerebroid_Press_Release.jpg" 
-             alt="University of Aberdeen press release on cerebroid research" 
-             width="200">
-    </div>
-
-    <!-- Award Announcement -->
-    <div class="outreach-item">
-        <h5>
-            <a href="https://humaneresearch.org.uk/announcing-the-winner-of-the-les-rhoades-phd-studentship-award/">
-                Congratulations to Eunchai for receiving the Les Rhoades PhD Studentship award
-            </a>
-        </h5>
-        <img src="./img/HumaneEK.jpg" alt="Award Image" width="200">
-    </div>
-
-    <!-- BBC Bitesize Essay -->
-    <div class="outreach-item">
-        <h5>
-            <a href="https://www.bbc.co.uk/bitesize/articles/z2t3ydm">
-                Short Essay on the Discovery of Adult Neurogenesis for BBC Bitesize
-            </a>
-        </h5>
-        <img src="./img/BBC.jpg" alt="BBC Article Image" width="200">
-    </div>
-
-    <!-- Video 2 -->
-    <div class="outreach-item">
-        <h5>
-            <a href="https://www.youtube.com/watch?v=ShIjh6pAIgk&feature=emb_title">
-                Adult Neurogenesis Talk for TechFest Aberdeen
-            </a>
-        </h5>
-        <div class="video-container">
-            <iframe width="560" height="315" 
-                    src="https://www.youtube.com/embed/ShIjh6pAIgk" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-            </iframe>
-        </div>
-    </div>
-
-</div>
-<style>
-    .outreach-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .outreach-item {
-        width: 100%;
-        max-width: 600px;
-        margin-bottom: 20px;
-    }
-
-    .outreach-item img, .video-container iframe {
-        max-width: 100%;
-        height: auto;
-    }
-
-    h5 {
-        font-size: 1.1em;
-        margin-bottom: 10px;
-    }
-
-    .video-container {
-        text-align: center;
-    }
-</style>
-
-     
-	<h2>Contact</h2>
-          <p> You can contact us at: 	Eunchai.kang[at]abdn.ac.uk, Daniel.Berg[at]abdn.ac.uk </p>
-
-  </div>  
-
-<div class="img-with-text">
-    <img src="./img/Lab picture2022.jpg" alt="Lab" style="width:50%" />
-    <p>Members of the Kang/Berg lab and friends at the beach in Aberdeen, Summer 2022</p>
-</div>
-</div>
-         
+        <div class="col-lg-5">
+          <div class="funding-card">
+            <h3>Postdoctoral fellowship routes</h3>
+            <ul>
+              <li><a href="https://www.embo.org/funding/fellowships-grants-and-career-support/postdoctoral-fellowships/" target="_blank" rel="noopener noreferrer">EMBO Postdoctoral Fellowships</a></li>
+              <li><a href="https://royalsociety.org/grants/newton-international/" target="_blank" rel="noopener noreferrer">Newton International Fellowships</a></li>
+              <li><a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships" target="_blank" rel="noopener noreferrer">Marie Skłodowska-Curie Postdoctoral Fellowships</a></li>
+              <li><a href="https://www.hfsp.org/funding/hfsp-funding/postdoctoral-fellowships" target="_blank" rel="noopener noreferrer">Human Frontier Science Program Fellowships</a></li>
+              <li><a href="https://www.royalcommission1851.org/fellowships" target="_blank" rel="noopener noreferrer">Royal Commission for the Exhibition of 1851 Fellowships</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <section id="lab-life" class="section bg-soft">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Daniel Berg 2022</p>
+      <div class="section-heading">
+        <p class="eyebrow">Around Aberdeen</p>
+        <h2>Lab Life</h2>
+      </div>
+      <div class="photo-grid">
+        <img src="./img/56462.jpg" alt="Kang/Berg Lab members at a group event" loading="lazy">
+        <img src="./img/56460.jpg" alt="Members of the Kang/Berg Lab" loading="lazy">
+        <img src="./img/56463.jpg" alt="Kang/Berg Lab group gathering" loading="lazy">
+        <img src="./img/Lab fun 1 2022.jpg" alt="Kang/Berg Lab social event" loading="lazy">
+        <img src="./img/Lab fun 2 2022.jpg" alt="Kang/Berg Lab members together" loading="lazy">
+        <img src="./img/Lab picture2022.jpg" alt="Members of the Kang/Berg Lab and friends at Aberdeen beach" loading="lazy">
+        <img src="./img/20260227_124634.jpg" alt="Gaby presenting a research poster" loading="lazy">
+        <img class="photo-wide" src="./img/cerebroid-1.png" alt="Human fetal brain cerebroids shown at different scales and labelled for cortical markers" loading="lazy">
+      </div>
     </div>
-    <!-- /.container -->
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="contact-card">
+        <p class="eyebrow">Get in touch</p>
+        <h2>Contact</h2>
+        <p>Kang/Berg Lab<br>Institute of Medical Sciences<br>University of Aberdeen<br>Foresterhill, Aberdeen AB25 2ZD, Scotland</p>
+        <p class="contact-links">
+          <span>Eunchai.Kang(at)abdn.ac.uk</span>
+          <span>Daniel.Berg(at)abdn.ac.uk</span>
+          <a href="https://www.linkedin.com/company/kangberglab/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Copyright &copy; <span id="copyright-year">2026</span> Kang/Berg Lab</p>
+    </div>
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom JavaScript for this theme -->
   <script src="js/scrolling-nav.js"></script>
-
+  <script>
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>
