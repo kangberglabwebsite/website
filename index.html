@@ -91,6 +91,23 @@
       width: 76px;
     }
 
+    .outreach-card-wide {
+      display: grid;
+      grid-column: 1 / -1;
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+    }
+
+    .outreach-card-wide > img {
+      aspect-ratio: auto;
+      height: 100%;
+      min-height: 260px;
+      object-fit: cover;
+    }
+
+    .outreach-card-wide .outreach-copy {
+      align-self: center;
+    }
+
     @media (min-width: 992px) {
       .hero-image-larger {
         margin-left: -5%;
@@ -116,6 +133,16 @@
       .photo-grid .photo-cerebroid {
         aspect-ratio: 4 / 3;
         grid-column: auto;
+      }
+
+      .outreach-card-wide {
+        display: block;
+      }
+
+      .outreach-card-wide > img {
+        aspect-ratio: 16 / 9;
+        height: auto;
+        min-height: 0;
       }
     }
 
@@ -469,6 +496,14 @@
           </div>
         </article>
 
+        <article class="outreach-card outreach-card-wide">
+          <img src="./img/corticalorganoid-nestinsox2.png" alt="Human cortical organoid labelled for nestin and SOX2">
+          <div class="outreach-copy">
+            <p class="outreach-type">Press release · Nature Communications</p>
+            <h3><a href="https://www.abdn.ac.uk/news/24945/" target="_blank" rel="noopener noreferrer">New research identifies role of autism genes in early brain development</a></h3>
+          </div>
+        </article>
+
         <article class="outreach-card">
           <img src="./img/HumaneEK.jpg" alt="Les Rhoades PhD Studentship award announcement">
           <div class="outreach-copy">
@@ -493,6 +528,17 @@
           <div class="outreach-copy">
             <p class="outreach-type">Video</p>
             <h3><a href="https://www.youtube.com/watch?v=ShIjh6pAIgk" target="_blank" rel="noopener noreferrer">Adult Neurogenesis Talk for TechFest Aberdeen</a></h3>
+          </div>
+        </article>
+
+        <article class="outreach-card outreach-video">
+          <a class="video-thumbnail" href="https://www.youtube.com/watch?v=307lUZ7zwNw&amp;t=8s" target="_blank" rel="noopener noreferrer" aria-label="Watch Do Hyeon's PhD journey at the Institute of Medical Sciences on YouTube">
+            <img src="https://img.youtube.com/vi/307lUZ7zwNw/hqdefault.jpg" alt="Thumbnail for Do Hyeon's PhD journey at the Institute of Medical Sciences" loading="lazy">
+            <span class="video-play" aria-hidden="true">▶</span>
+          </a>
+          <div class="outreach-copy">
+            <p class="outreach-type">PhD journey</p>
+            <h3><a href="https://www.youtube.com/watch?v=307lUZ7zwNw&amp;t=8s" target="_blank" rel="noopener noreferrer">Do Hyeon's PhD journey at the Institute of Medical Sciences</a></h3>
           </div>
         </article>
       </div>
