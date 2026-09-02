@@ -56,6 +56,10 @@
       font-weight: 700;
     }
 
+    .team-photo-current {
+      object-position: center 70%;
+    }
+
     .video-thumbnail {
       aspect-ratio: 16 / 9;
       background: #091925;
@@ -95,11 +99,35 @@
       }
     }
 
-    .photo-grid .photo-wide {
-      aspect-ratio: auto;
+    .photo-grid .photo-cerebroid {
+      aspect-ratio: 8 / 3;
       background: #000;
-      grid-column: 1 / -1;
+      grid-column: span 2;
       object-fit: contain;
+    }
+
+    .photo-grid .photo-wide {
+      aspect-ratio: 16 / 7;
+      grid-column: 1 / -1;
+      object-fit: cover;
+    }
+
+    @media (max-width: 767.98px) {
+      .photo-grid .photo-cerebroid {
+        aspect-ratio: 4 / 3;
+        grid-column: auto;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      .photo-grid .photo-cerebroid {
+        aspect-ratio: auto;
+        grid-column: 1 / -1;
+      }
+
+      .photo-grid .photo-wide {
+        aspect-ratio: 4 / 3;
+      }
     }
   </style>
 </head>
@@ -184,25 +212,32 @@
       </div>
 
       <div class="row research-grid">
-        <div class="col-md-4">
+        <div class="col-md-6">
           <article class="research-card">
             <span class="card-number">01</span>
             <h3>Neural stem cells</h3>
             <p>We study how neural stem cells are regulated during cortical and hippocampal development and how they generate organised neural tissue.</p>
           </article>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
           <article class="research-card">
             <span class="card-number">02</span>
             <h3>Human 3D models</h3>
             <p>We develop organoids, cerebroids and assembloids incorporating microglia, vasculature and other cell types, as well as models of the developing choroid plexus.</p>
           </article>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
           <article class="research-card">
             <span class="card-number">03</span>
             <h3>Developmental disruption</h3>
             <p>We examine how maternal inflammation, stress and other physiological signals alter brain development and may shape trajectories relevant to neurodevelopmental conditions.</p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="research-card">
+            <span class="card-number">04</span>
+            <h3>Alzheimer's disease and neurodegeneration</h3>
+            <p>We use human iPSC-derived brain organoids and multicellular assembloids to investigate mechanisms relevant to neurodegenerative disease, including Alzheimer's disease. These models allow us to examine interactions among neurons, glia and vascular cells during disease-associated stress and inflammation.</p>
           </article>
         </div>
       </div>
@@ -220,7 +255,7 @@
         <h2>People</h2>
       </div>
 
-      <img class="team-photo" src="./img/Image.jpeg" alt="Members of the Kang/Berg Lab">
+      <img class="team-photo team-photo-current" src="./img/lab-members-2026.jpg" alt="Members of the Kang/Berg Lab in the Institute of Medical Sciences, 2026">
 
       <h3 class="people-heading">Principal investigators</h3>
       <div class="people-grid people-grid-pi">
@@ -330,7 +365,7 @@
 
       <div class="alumni-block">
         <h3>Former lab members</h3>
-        <p><strong>Mario Yanakiev</strong> · Former PhD Student</p>
+        <p><strong>Mario Yanakiev, PhD</strong> · Former PhD Student</p>
         <p><strong>Delia Ramirez, PhD</strong> · Former Postdoctoral Researcher</p>
         <p><strong>Olivia Soper</strong> · PhD completed 2025 · Now a Postdoctoral Researcher at the University of Aberdeen</p>
         <p><strong>Do Hyeon Gim</strong> · PhD completed 2025 · Now a Postdoctoral Researcher at the University of Oxford</p>
@@ -508,7 +543,8 @@
         <img src="./img/Lab fun 2 2022.jpg" alt="Kang/Berg Lab members together" loading="lazy">
         <img src="./img/Lab picture2022.jpg" alt="Members of the Kang/Berg Lab and friends at Aberdeen beach" loading="lazy">
         <img src="./img/20260227_124634.jpg" alt="Gaby presenting a research poster" loading="lazy">
-        <img class="photo-wide" src="./img/cerebroid-1.png" alt="Human fetal brain cerebroids shown at different scales and labelled for cortical markers" loading="lazy">
+        <img class="photo-cerebroid" src="./img/cerebroid-1.png" alt="Human fetal brain cerebroids shown at different scales and labelled for cortical markers" loading="lazy">
+        <img class="photo-wide" src="./img/Image.jpeg" alt="Members of the Kang/Berg Lab in an earlier outdoor group photograph" loading="lazy">
       </div>
     </div>
   </section>
