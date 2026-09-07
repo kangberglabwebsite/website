@@ -104,6 +104,11 @@
       object-fit: cover;
     }
 
+    .outreach-card-wide > img.outreach-cerebroid-image {
+      background: #000;
+      object-fit: contain;
+    }
+
     .outreach-card-wide .outreach-copy {
       align-self: center;
     }
@@ -116,13 +121,6 @@
       }
     }
 
-    .photo-grid .photo-cerebroid {
-      aspect-ratio: 8 / 3;
-      background: #000;
-      grid-column: span 2;
-      object-fit: contain;
-    }
-
     .photo-grid .photo-wide {
       aspect-ratio: 16 / 7;
       grid-column: 1 / -1;
@@ -130,11 +128,6 @@
     }
 
     @media (max-width: 767.98px) {
-      .photo-grid .photo-cerebroid {
-        aspect-ratio: 4 / 3;
-        grid-column: auto;
-      }
-
       .outreach-card-wide {
         display: block;
       }
@@ -147,11 +140,6 @@
     }
 
     @media (max-width: 575.98px) {
-      .photo-grid .photo-cerebroid {
-        aspect-ratio: auto;
-        grid-column: 1 / -1;
-      }
-
       .photo-grid .photo-wide {
         aspect-ratio: 4 / 3;
       }
@@ -489,6 +477,17 @@
       </div>
 
       <div class="outreach-grid">
+        <article class="outreach-card outreach-card-wide">
+          <img class="outreach-cerebroid-image"
+            src="./img/cerebroid-1.png"
+            alt="Human fetal brain cerebroids shown at different scales and labelled for cortical markers"
+            loading="lazy">
+          <div class="outreach-copy">
+            <p class="outreach-type">Media feature · Medical Xpress</p>
+            <h3><a href="https://medicalxpress.com/news/2026-09-cerebroid-hints-maternal-inflammation-fetal.html" target="_blank" rel="noopener noreferrer">Cerebroid study hints at how maternal inflammation may influence fetal brain development</a></h3>
+          </div>
+        </article>
+
         <article class="outreach-card outreach-video">
           <a class="video-thumbnail" href="https://www.youtube.com/watch?v=xmiDiDY6yoY&amp;t=24s" target="_blank" rel="noopener noreferrer" aria-label="Watch How Scientists Grow Human Brain Cells to Uncover Neuroscience's Biggest Secrets on YouTube">
             <img src="https://img.youtube.com/vi/xmiDiDY6yoY/hqdefault.jpg" alt="Thumbnail for the video How Scientists Grow Human Brain Cells to Uncover Neuroscience's Biggest Secrets" loading="lazy">
@@ -601,7 +600,6 @@
         <img src="./img/Lab fun 2 2022.jpg" alt="Kang/Berg Lab members together" loading="lazy">
         <img src="./img/Lab picture2022.jpg" alt="Members of the Kang/Berg Lab and friends at Aberdeen beach" loading="lazy">
         <img src="./img/20260227_124634.jpg" alt="Gaby presenting a research poster" loading="lazy">
-        <img class="photo-cerebroid" src="./img/cerebroid-1.png" alt="Human fetal brain cerebroids shown at different scales and labelled for cortical markers" loading="lazy">
         <img class="photo-wide" src="./img/Image.jpeg" alt="Members of the Kang/Berg Lab in an earlier outdoor group photograph" loading="lazy">
       </div>
     </div>
