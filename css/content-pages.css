@@ -1,0 +1,207 @@
+/* Shared styles for Kang/Berg Lab research and profile pages */
+
+.navbar-brand {
+  align-items: center;
+  display: inline-flex;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.navbar-brand .navbar-logo-lockup {
+  display: block;
+  height: 46px;
+  object-fit: contain;
+  width: auto;
+}
+
+.page-hero {
+  background: linear-gradient(120deg, var(--navy-deep) 0%, #173b55 62%, #155f75 100%);
+  color: var(--white);
+  padding: 86px 0 78px;
+}
+
+.page-hero h1 {
+  color: var(--white);
+  font-size: clamp(2.7rem, 6vw, 4.8rem);
+  letter-spacing: -0.04em;
+  margin-bottom: 1rem;
+}
+
+.page-hero .eyebrow { color: var(--aqua); }
+
+.page-lead {
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 1.18rem;
+  max-width: 760px;
+}
+
+.breadcrumb-mini {
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 0.86rem;
+  margin-bottom: 1.2rem;
+}
+
+.breadcrumb-mini a { color: #bde8e9; }
+
+.content-section { padding: 78px 0; }
+.content-section.bg-soft { background: var(--soft); }
+.content-narrow { max-width: 850px; }
+.content-narrow p { font-size: 1.04rem; }
+.content-narrow h2 { margin-top: 2.4rem; }
+.content-narrow h3 { margin-top: 1.8rem; }
+
+.topic-grid {
+  display: grid;
+  gap: 1.35rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.topic-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 1.8rem;
+}
+
+.topic-card .card-number {
+  margin-bottom: 0.85rem;
+}
+
+.topic-card h2,
+.topic-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.8rem;
+}
+
+.topic-card p {
+  color: var(--muted);
+  flex: 1;
+}
+
+.topic-card a {
+  font-weight: 700;
+  margin-top: 0.4rem;
+}
+
+.figure-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 16px 38px rgba(17, 40, 61, 0.08);
+  overflow: hidden;
+}
+
+.figure-card img {
+  max-height: 520px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.figure-card.figure-contain img {
+  background: #000;
+  object-fit: contain;
+}
+
+.figure-caption {
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin: 0;
+  padding: 1rem 1.2rem 1.15rem;
+}
+
+.key-points {
+  border-left: 3px solid var(--aqua);
+  margin: 2rem 0;
+  padding: 0.25rem 0 0.25rem 1.35rem;
+}
+
+.key-points li { margin-bottom: 0.6rem; }
+
+.publication-callout {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  margin-top: 2rem;
+  padding: 1.5rem 1.6rem;
+}
+
+.publication-callout p:last-child { margin-bottom: 0; }
+
+.related-links {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.related-link {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.related-link strong {
+  color: var(--navy);
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.profile-hero-grid {
+  align-items: center;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: minmax(0, 1.4fr) minmax(220px, 0.6fr);
+}
+
+.profile-photo {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 18px;
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.3);
+  justify-self: end;
+  max-height: 360px;
+  object-fit: cover;
+  width: min(100%, 320px);
+}
+
+.profile-role {
+  color: #bde8e9;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.profile-meta {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1.4rem 1.5rem;
+}
+
+.profile-meta p { margin-bottom: 0.5rem; }
+.profile-meta p:last-child { margin-bottom: 0; }
+
+.page-footer-links {
+  margin-bottom: 0.65rem;
+  text-align: center;
+}
+
+.page-footer-links a {
+  color: #bde8e9;
+  font-weight: 600;
+  margin: 0 0.55rem;
+}
+
+@media (max-width: 767.98px) {
+  .page-hero { padding: 66px 0 60px; }
+  .content-section { padding: 60px 0; }
+  .topic-grid, .related-links { grid-template-columns: 1fr; }
+  .profile-hero-grid { grid-template-columns: 1fr; }
+  .profile-photo { justify-self: start; max-width: 240px; }
+}
+
+@media (max-width: 575.98px) {
+  .navbar-brand .navbar-logo-lockup { height: 38px; }
+}
