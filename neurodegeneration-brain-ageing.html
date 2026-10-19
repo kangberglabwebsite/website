@@ -38,6 +38,7 @@
     }
     .research-theme-hero .eyebrow { color: #41c7d9; }
     .research-theme-hero h1 {
+      color: #fff !important;
       font-size: clamp(2.6rem, 5vw, 4.5rem);
       margin-bottom: 1.2rem;
       max-width: 900px;
@@ -70,10 +71,64 @@
       margin-bottom: 0.55rem;
       text-transform: uppercase;
     }
+    .intro-grid,
+    .two-column-block {
+      align-items: center;
+      display: grid;
+      gap: 2.5rem;
+      grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+    }
+    .video-feature,
+    .figure-card {
+      background: #f4f8f9;
+      border: 1px solid #dce6e9;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .video-thumbnail {
+      aspect-ratio: 16 / 9;
+      background: #091925;
+      display: block;
+      overflow: hidden;
+      position: relative;
+    }
+    .video-thumbnail img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+    .video-play {
+      align-items: center;
+      background: #ff0033;
+      border-radius: 14px;
+      color: #fff;
+      display: flex;
+      font-size: 1.4rem;
+      height: 54px;
+      justify-content: center;
+      left: 50%;
+      padding-left: 4px;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 76px;
+    }
+    .figure-card img {
+      display: block;
+      width: 100%;
+    }
+    .figure-caption {
+      color: #60727c !important;
+      font-size: 0.9rem !important;
+      line-height: 1.55 !important;
+      margin: 0 !important;
+      padding: 1rem 1.1rem 1.1rem;
+    }
     .programme-grid {
       display: grid;
       gap: 1.25rem;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       margin-top: 1.75rem;
     }
     .programme-card {
@@ -119,6 +174,8 @@
     @media (max-width: 767.98px) {
       .navbar-brand .navbar-logo-lockup { height: 38px; }
       .research-theme-hero { padding: 8rem 0 4rem; }
+      .intro-grid,
+      .two-column-block,
       .programme-grid { grid-template-columns: 1fr; }
     }
   </style>
@@ -156,17 +213,39 @@
 
   <main class="research-content">
     <div class="container">
-      <section class="theme-block">
-        <p class="theme-kicker">Cellular mechanisms</p>
-        <h2>Senescence, stress responses &amp; autophagy</h2>
-        <p>Brain ageing is accompanied by changes in cellular stress responses, protein and organelle turnover, inflammatory signalling and the capacity of cells to recover from damage. We use human iPSC-derived neural cells and 3D neural models to define how these processes change with age and how they contribute to disease-relevant phenotypes.</p>
-        <p>A major focus is cellular senescence: how senescent states arise in neural and non-neural cell populations, how they alter the surrounding tissue environment, and whether they increase vulnerability to neurodegenerative stress. In parallel, we investigate impaired autophagy in human hippocampal organoids as a mechanism relevant to Alzheimer's disease.</p>
-        <ul>
-          <li>Cellular senescence in human neural and glial populations</li>
-          <li>Autophagy and cellular stress in hippocampal organoids</li>
-          <li>Age-associated inflammatory and secretory signalling</li>
-          <li>Human cellular models for testing mechanisms of brain ageing</li>
-        </ul>
+      <section class="theme-block intro-grid">
+        <div>
+          <p class="theme-kicker">Human models of ageing</p>
+          <h2>Modelling ageing in human neural systems</h2>
+          <p>Ageing changes the behaviour of neurons, glial cells and brain barrier tissues, as well as the way these populations respond to stress and inflammation. We build human cell and 3D tissue models that allow these processes to be studied experimentally and connected to mechanisms relevant to Alzheimer's disease.</p>
+          <p>Our approach ranges from defined iPSC-derived neural cultures to hippocampal and cortical organoids, multicellular assembloids and choroid plexus models.</p>
+        </div>
+        <div class="video-feature">
+          <a class="video-thumbnail" href="https://www.youtube.com/watch?v=O3ekFOjOqNw&amp;t=11s" target="_blank" rel="noopener noreferrer" aria-label="Watch our public engagement video about human brain research on YouTube">
+            <img src="https://img.youtube.com/vi/O3ekFOjOqNw/hqdefault.jpg" alt="Thumbnail for a Kang/Berg Lab public engagement video about human brain research" loading="lazy">
+            <span class="video-play" aria-hidden="true">▶</span>
+          </a>
+          <p class="figure-caption">How human brain models can help us investigate mechanisms of brain development, ageing and disease.</p>
+        </div>
+      </section>
+
+      <section class="theme-block two-column-block">
+        <div>
+          <p class="theme-kicker">Cellular mechanisms</p>
+          <h2>Senescence, stress responses &amp; autophagy</h2>
+          <p>Brain ageing is accompanied by changes in cellular stress responses, protein and organelle turnover, inflammatory signalling and the capacity of cells to recover from damage. We use human iPSC-derived neural cells and 3D neural models to define how these processes change with age and how they contribute to disease-relevant phenotypes.</p>
+          <p>A major focus is cellular senescence: how senescent states arise in neural and non-neural cell populations, how they alter the surrounding tissue environment, and whether they increase vulnerability to neurodegenerative stress. In parallel, we investigate impaired autophagy in human hippocampal organoids as a mechanism relevant to Alzheimer's disease.</p>
+          <ul>
+            <li>Cellular senescence in human neural and glial populations</li>
+            <li>Autophagy and cellular stress in hippocampal organoids</li>
+            <li>Age-associated inflammatory and secretory signalling</li>
+            <li>Human cellular models for testing mechanisms of brain ageing</li>
+          </ul>
+        </div>
+        <figure class="figure-card">
+          <img src="./img/corticalorganoid-nestinsox2.png" alt="Human cortical organoid labelled for neural stem cell markers" loading="lazy">
+          <figcaption class="figure-caption">Human organoid models allow ageing- and disease-associated mechanisms to be studied in a three-dimensional neural environment.</figcaption>
+        </figure>
       </section>
 
       <section class="theme-block">
