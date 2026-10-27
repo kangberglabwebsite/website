@@ -26,6 +26,21 @@
     offset: 56
   });
 
+  // Highlight the current fully funded PhD studentship in the Join us section.
+  if ($('#join .col-lg-7').length && $('#phd-studentship-2026').length === 0) {
+    var $phdCard = $(
+      '<div class="funding-card mb-4" id="phd-studentship-2026">' +
+        '<p class="eyebrow mb-2">Open PhD studentship</p>' +
+        '<h3>Fully funded PhD: maternal diabetes and human brain development</h3>' +
+        '<p>We are recruiting a PhD student through the BBSRC EASTBIO Doctoral Training Partnership. The project will use human iPSC-derived brain organoids and assembloids to investigate how maternal diabetes influences early brain development and neurodevelopmental risk.</p>' +
+        '<p><strong>Deadline: 16 November 2026</strong> · Open to UK and international applicants.</p>' +
+        '<p class="mb-0"><a href="phd-maternal-diabetes-brain-organoids.html"><strong>Read about the project</strong></a> &nbsp;·&nbsp; <a href="https://www.findaphd.com/phds/project/eastbio-understanding-neurodevelopmental-risk-associated-with-maternal-diabetes-using-human-stem-cell-derived-brain-organoids/?p200985" target="_blank" rel="noopener noreferrer">View the FindAPhD advert</a></p>' +
+      '</div>'
+    );
+
+    $('#join .col-lg-7 .lead').after($phdCard);
+  }
+
   // Older outreach item kept as a lower-priority card at the end of the section.
   if ($('#outreach .outreach-grid').length && $('#dementia-donation-outreach').length === 0) {
     var $dementiaCard = $(
