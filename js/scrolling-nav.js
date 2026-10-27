@@ -31,10 +31,10 @@
     var $phdCard = $(
       '<div class="funding-card mb-4" id="phd-studentship-2026">' +
         '<p class="eyebrow mb-2">Open PhD studentship</p>' +
-        '<h3>Fully funded PhD: maternal diabetes and human brain development</h3>' +
-        '<p>We are recruiting a PhD student through the BBSRC EASTBIO Doctoral Training Partnership. The project will use human iPSC-derived brain organoids and assembloids to investigate how maternal diabetes influences early brain development and neurodevelopmental risk.</p>' +
+        '<h3>Fully funded PhD: maternal metabolism and the developing human brain</h3>' +
+        '<p>We are recruiting a PhD student through the BBSRC EASTBIO Doctoral Training Partnership. The project will explore how maternal metabolism shapes the developing human brain, with a particular focus on the choroid plexus using human iPSC-derived brain organoids.</p>' +
         '<p><strong>Deadline: 16 November 2026</strong> · Open to UK and international applicants.</p>' +
-        '<p class="mb-0"><a href="phd-maternal-diabetes-brain-organoids.html"><strong>Read about the project</strong></a> &nbsp;·&nbsp; <a href="https://www.findaphd.com/phds/project/eastbio-understanding-neurodevelopmental-risk-associated-with-maternal-diabetes-using-human-stem-cell-derived-brain-organoids/?p200985" target="_blank" rel="noopener noreferrer">View the FindAPhD advert</a></p>' +
+        '<p class="mb-0"><a href="phd-maternal-metabolism-choroid-plexus-organoids.html"><strong>Read about the project</strong></a> &nbsp;·&nbsp; <a href="https://www.findaphd.com/phds/project/eastbio-how-does-maternal-metabolism-shape-the-developing-human-brain-exploring-the-choroid-plexus-using-ipsc-derived-brain-organoids/?p200985" target="_blank" rel="noopener noreferrer">View the FindAPhD advert</a></p>' +
       '</div>'
     );
 
